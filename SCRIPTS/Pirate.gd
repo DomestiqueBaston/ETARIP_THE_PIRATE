@@ -17,9 +17,9 @@ func _physics_process(_delta):
 		set_physics_process(false)
 	
 	if Autoload.invert == false:
-		$AnimatedSprite.material.set_shader_param("RED_OUTLINE", Color(0.34, 0.08, 0.09, 1.0))
+		$AnimatedSprite.material.set_shader_param("red", Color(0.34, 0.08, 0.08, 1.0))
 	else:
-		$AnimatedSprite.material.set_shader_param("RED_OUTLINE", Color(0.20, 0.19, 0.23, 1.0))
+		$AnimatedSprite.material.set_shader_param("red", Color(0.20, 0.19, 0.23, 1.0))
 
 	if Input.is_action_pressed("ui_right"):
 		if Autoload.invert == true:

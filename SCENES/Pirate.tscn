@@ -35,8 +35,8 @@
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 32 )
-shader_param/BLACK_OUTLINE = Color( 0.2, 0.196078, 0.239216, 1 )
-shader_param/RED_OUTLINE = Color( 0.341176, 0.0823529, 0.0862745, 1 )
+shader_param/black = Color( 0.2, 0.196078, 0.239216, 1 )
+shader_param/red = Color( 0.341176, 0.0823529, 0.0862745, 1 )
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
