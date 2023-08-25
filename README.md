@@ -10,4 +10,4 @@ Sound Fxs by Kronbits (http://kronbits.itch.io/freesfx)
 
 Music by Shononoki (http://shononoki.itch.io/rpg-music-pack-svl)
 
-Graphics+Sound under CC0 license (see web pages above). Code under GPL3.0 license.
+Graphics+Sound Fxs+Music under CC0 license (see web pages above). Code under GPL3.0 license.
