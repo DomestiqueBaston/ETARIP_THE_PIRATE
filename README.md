@@ -1,5 +1,6 @@
 # Etarip_the_Pirate
- A very simple platformer in which the twist resides in the fact that left and right directions change every three seconds... 
+ A very simple platformer in which the twist resides in the fact that left and right directions change every three seconds...
+ 
 
 Code by Robin and Ferdi. Help (a lot) from BabadesBois' Discord and the web.
 
