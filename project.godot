@@ -1,0 +1,74 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="ETARIP the Pirate"
+run/main_scene="res://SCENES/Etarip_the_game.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Autoload="*res://SCRIPTS/Autoload.gd"
+
+[display]
+
+window/size/width=320
+window/size/height=256
+window/size/always_on_top=true
+window/size/test_width=640
+window/size/test_height=512
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[layer_names]
+
+2d_physics/layer_1="Platforms"
+2d_physics/layer_2="Pirate"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="Collectible"
+2d_physics/layer_5="Flag"
+2d_physics/layer_6="Death"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

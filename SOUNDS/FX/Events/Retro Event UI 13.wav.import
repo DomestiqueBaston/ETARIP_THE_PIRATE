@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Event UI 13.wav-30bd8dfee6ff9bfca1d877c109f0dcc9.sample"
+
+[deps]
+
+source_file="res://SOUNDS/FX/Events/Retro Event UI 13.wav"
+dest_files=[ "res://.import/Retro Event UI 13.wav-30bd8dfee6ff9bfca1d877c109f0dcc9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

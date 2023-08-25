@@ -1,0 +1,137 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://SCRIPTS/Countdown.gd" type="Script" id=1]
+[ext_resource path="res://SCRIPTS/Coins_counter.gd" type="Script" id=2]
+[ext_resource path="res://FONTS/Daydream.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://SCENES/Bottle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://SCENES/Pirate.tscn" type="PackedScene" id=5]
+[ext_resource path="res://SCENES/Flag.tscn" type="PackedScene" id=6]
+[ext_resource path="res://SCENES/Coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://SCENES/Background_2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://SCRIPTS/Etarip_2.gd" type="Script" id=9]
+[ext_resource path="res://SCRIPTS/Win.gd" type="Script" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 11
+outline_size = 2
+outline_color = Color( 0.2, 0.196078, 0.239216, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 11
+outline_size = 2
+outline_color = Color( 0.2, 0.196078, 0.239216, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Etarip_2" type="Node2D"]
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="Flag" parent="." instance=ExtResource( 6 )]
+position = Vector2( 521, 0 )
+scale = Vector2( -1, 1 )
+
+[node name="Background_2" parent="." instance=ExtResource( 8 )]
+
+[node name="Coin1" parent="." instance=ExtResource( 7 )]
+position = Vector2( 39, 137 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coin2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 231, 134 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coin3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 35, 39 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bottle" parent="." instance=ExtResource( 4 )]
+position = Vector2( 169, 199 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pirate" parent="." instance=ExtResource( 5 )]
+position = Vector2( 13, 192 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+offset = Vector2( 11, 0 )
+transform = Transform2D( 1, 0, 0, 1, 11, 0 )
+
+[node name="ColorRect" type="ColorRect" parent="HUD"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -11.0
+margin_right = 309.0
+margin_bottom = 256.0
+color = Color( 0.2, 0.196078, 0.239216, 0.501961 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Countdown" type="Label" parent="HUD"]
+margin_left = -6.0
+margin_top = 5.0
+margin_right = 118.0
+margin_bottom = 21.0
+custom_colors/font_color = Color( 0.866667, 0.776471, 0.631373, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Timer:"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Coins" type="Label" parent="HUD"]
+margin_left = 198.0
+margin_top = 5.0
+margin_right = 297.0
+margin_bottom = 21.0
+custom_colors/font_color = Color( 0.866667, 0.776471, 0.631373, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Coins:"
+align = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -11.0
+margin_right = 309.0
+margin_bottom = 256.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Win" type="Label" parent="HUD/CenterContainer"]
+margin_left = 22.0
+margin_top = 91.0
+margin_right = 297.0
+margin_bottom = 164.0
+custom_colors/font_color = Color( 0.866667, 0.776471, 0.631373, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Stage completed,
+ my friend
+
+Hit Enter for  next level..."
+align = 1
+valign = 1
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="timeout" from="Timer" to="Pirate" method="_on_Timer_timeout"]

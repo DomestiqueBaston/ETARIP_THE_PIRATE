@@ -1,0 +1,1079 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Medium 03.png" type="Texture" id=1]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Small Cloud 1.png" type="Texture" id=2]
+[ext_resource path="res://SCRIPTS/La_Mort.gd" type="Script" id=3]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Additional Sky.png" type="Texture" id=4]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/BG Image.png" type="Texture" id=5]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 02.png" type="Texture" id=6]
+[ext_resource path="res://SOUNDS/MUSIC/sea_theme_1.wav" type="AudioStream" id=8]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Right 04.png" type="Texture" id=9]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png" type="Texture" id=10]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Medium 02.png" type="Texture" id=11]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Additional Water.png" type="Texture" id=12]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png" type="Texture" id=13]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Medium 04.png" type="Texture" id=14]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png" type="Texture" id=15]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Small Cloud 2.png" type="Texture" id=16]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 04.png" type="Texture" id=17]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" type="Texture" id=18]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png" type="Texture" id=19]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Medium 01.png" type="Texture" id=20]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 02.png" type="Texture" id=21]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png" type="Texture" id=22]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Right 01.png" type="Texture" id=23]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 01.png" type="Texture" id=24]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png" type="Texture" id=25]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 03.png" type="Texture" id=26]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Left 01.png" type="Texture" id=27]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Right 02.png" type="Texture" id=28]
+[ext_resource path="res://GRAPHICS/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Right 03.png" type="Texture" id=31]
+[ext_resource path="res://SCRIPTS/Background.gd" type="Script" id=33]
+[ext_resource path="res://SOUNDS/MUSIC/Game_Over_1.wav" type="AudioStream" id=34]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Reflections",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 20 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 27 ), ExtResource( 21 ), ExtResource( 26 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Terrain (32x32).png 0"
+0/texture = ExtResource( 18 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 128, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Terrain (32x32).png 1"
+1/texture = ExtResource( 18 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 128, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Terrain (32x32).png 2"
+2/texture = ExtResource( 18 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 128, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Terrain (32x32).png 3"
+3/texture = ExtResource( 18 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Terrain (32x32).png 4"
+4/texture = ExtResource( 18 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 32, 0, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Terrain (32x32).png 5"
+5/texture = ExtResource( 18 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 64, 0, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Terrain (32x32).png 6"
+6/texture = ExtResource( 18 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 32, 32, 32 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Terrain (32x32).png 7"
+7/texture = ExtResource( 18 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 32, 32, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Terrain (32x32).png 8"
+8/texture = ExtResource( 18 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 64, 32, 32, 32 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Terrain (32x32).png 9"
+9/texture = ExtResource( 18 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 64, 32, 32 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "Terrain (32x32).png 10"
+10/texture = ExtResource( 18 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 32, 64, 32, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "Terrain (32x32).png 11"
+11/texture = ExtResource( 18 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 64, 64, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "Terrain (32x32).png 12"
+12/texture = ExtResource( 18 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 224, 96, 32, 32 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "Terrain (32x32).png 13"
+13/texture = ExtResource( 18 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 224, 128, 32, 32 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "Terrain (32x32).png 14"
+14/texture = ExtResource( 18 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 192, 96, 32, 32 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "Terrain (32x32).png 15"
+15/texture = ExtResource( 18 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 192, 128, 32, 32 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+16/name = "Terrain (32x32).png 16"
+16/texture = ExtResource( 18 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 128, 128, 32, 32 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 0
+17/name = "Terrain (32x32).png 17"
+17/texture = ExtResource( 18 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 128, 64, 32, 32 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape_one_way = false
+17/shape_one_way_margin = 0.0
+17/shapes = [  ]
+17/z_index = 0
+18/name = "Terrain (32x32).png 18"
+18/texture = ExtResource( 18 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 128, 32, 32, 32 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+19/name = "Terrain (32x32).png 19"
+19/texture = ExtResource( 18 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 128, 0, 32, 32 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
+20/name = "Terrain (32x32).png 20"
+20/texture = ExtResource( 18 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 192, 0, 32, 32 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape_one_way = false
+20/shape_one_way_margin = 0.0
+20/shapes = [  ]
+20/z_index = 0
+21/name = "Terrain (32x32).png 21"
+21/texture = ExtResource( 18 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 224, 0, 32, 32 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape_one_way = false
+21/shape_one_way_margin = 0.0
+21/shapes = [  ]
+21/z_index = 0
+22/name = "Terrain (32x32).png 22"
+22/texture = ExtResource( 18 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 192, 32, 32, 32 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shape_offset = Vector2( 0, 0 )
+22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+22/shape_one_way = false
+22/shape_one_way_margin = 0.0
+22/shapes = [  ]
+22/z_index = 0
+23/name = "Terrain (32x32).png 23"
+23/texture = ExtResource( 18 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 224, 32, 32, 32 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shape_offset = Vector2( 0, 0 )
+23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+23/shape_one_way = false
+23/shape_one_way_margin = 0.0
+23/shapes = [  ]
+23/z_index = 0
+24/name = "Terrain (32x32).png 24"
+24/texture = ExtResource( 18 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 288, 0, 32, 32 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape_one_way = false
+24/shape_one_way_margin = 0.0
+24/shapes = [  ]
+24/z_index = 0
+25/name = "Terrain (32x32).png 25"
+25/texture = ExtResource( 18 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 320, 0, 32, 32 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape_one_way = false
+25/shape_one_way_margin = 0.0
+25/shapes = [  ]
+25/z_index = 0
+26/name = "Terrain (32x32).png 26"
+26/texture = ExtResource( 18 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 288, 32, 32, 32 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape_one_way = false
+26/shape_one_way_margin = 0.0
+26/shapes = [  ]
+26/z_index = 0
+27/name = "Terrain (32x32).png 27"
+27/texture = ExtResource( 18 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 320, 32, 32, 32 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape_one_way = false
+27/shape_one_way_margin = 0.0
+27/shapes = [  ]
+27/z_index = 0
+28/name = "Terrain (32x32).png 28"
+28/texture = ExtResource( 18 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 384, 0, 32, 32 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape_one_way = false
+28/shape_one_way_margin = 0.0
+28/shapes = [  ]
+28/z_index = 0
+29/name = "Terrain (32x32).png 29"
+29/texture = ExtResource( 18 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 416, 0, 32, 32 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape_one_way = false
+29/shape_one_way_margin = 0.0
+29/shapes = [  ]
+29/z_index = 0
+30/name = "Terrain (32x32).png 30"
+30/texture = ExtResource( 18 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 384, 32, 32, 32 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape_one_way = false
+30/shape_one_way_margin = 0.0
+30/shapes = [  ]
+30/z_index = 0
+31/name = "Terrain (32x32).png 31"
+31/texture = ExtResource( 18 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 416, 32, 32, 32 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape_one_way = false
+31/shape_one_way_margin = 0.0
+31/shapes = [  ]
+31/z_index = 0
+32/name = "Terrain (32x32).png 32"
+32/texture = ExtResource( 18 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 480, 0, 32, 32 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
+33/name = "Terrain (32x32).png 33"
+33/texture = ExtResource( 18 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 480, 32, 32, 32 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shape_offset = Vector2( 0, 0 )
+33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+33/shape_one_way = false
+33/shape_one_way_margin = 0.0
+33/shapes = [  ]
+33/z_index = 0
+34/name = "Terrain (32x32).png 34"
+34/texture = ExtResource( 18 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 512, 32, 32, 32 )
+34/tile_mode = 0
+34/occluder_offset = Vector2( 0, 0 )
+34/navigation_offset = Vector2( 0, 0 )
+34/shape_offset = Vector2( 0, 0 )
+34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+34/shape_one_way = false
+34/shape_one_way_margin = 0.0
+34/shapes = [  ]
+34/z_index = 0
+35/name = "Terrain (32x32).png 35"
+35/texture = ExtResource( 18 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 288, 96, 32, 32 )
+35/tile_mode = 0
+35/occluder_offset = Vector2( 0, 0 )
+35/navigation_offset = Vector2( 0, 0 )
+35/shape_offset = Vector2( 0, 0 )
+35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+35/shape_one_way = false
+35/shape_one_way_margin = 0.0
+35/shapes = [  ]
+35/z_index = 0
+36/name = "Terrain (32x32).png 36"
+36/texture = ExtResource( 18 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 320, 96, 32, 32 )
+36/tile_mode = 0
+36/occluder_offset = Vector2( 0, 0 )
+36/navigation_offset = Vector2( 0, 0 )
+36/shape_offset = Vector2( 0, 0 )
+36/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+36/shape_one_way = false
+36/shape_one_way_margin = 0.0
+36/shapes = [  ]
+36/z_index = 0
+37/name = "Terrain (32x32).png 37"
+37/texture = ExtResource( 18 )
+37/tex_offset = Vector2( 0, 0 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 288, 128, 32, 32 )
+37/tile_mode = 0
+37/occluder_offset = Vector2( 0, 0 )
+37/navigation_offset = Vector2( 0, 0 )
+37/shape_offset = Vector2( 0, 0 )
+37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+37/shape_one_way = false
+37/shape_one_way_margin = 0.0
+37/shapes = [  ]
+37/z_index = 0
+38/name = "Terrain (32x32).png 38"
+38/texture = ExtResource( 18 )
+38/tex_offset = Vector2( 0, 0 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 320, 128, 32, 32 )
+38/tile_mode = 0
+38/occluder_offset = Vector2( 0, 0 )
+38/navigation_offset = Vector2( 0, 0 )
+38/shape_offset = Vector2( 0, 0 )
+38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+38/shape_one_way = false
+38/shape_one_way_margin = 0.0
+38/shapes = [  ]
+38/z_index = 0
+39/name = "Terrain (32x32).png 39"
+39/texture = ExtResource( 18 )
+39/tex_offset = Vector2( 0, 0 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 384, 96, 32, 32 )
+39/tile_mode = 0
+39/occluder_offset = Vector2( 0, 0 )
+39/navigation_offset = Vector2( 0, 0 )
+39/shape_offset = Vector2( 0, 0 )
+39/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+39/shape_one_way = false
+39/shape_one_way_margin = 0.0
+39/shapes = [  ]
+39/z_index = 0
+40/name = "Terrain (32x32).png 40"
+40/texture = ExtResource( 18 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 416, 96, 32, 32 )
+40/tile_mode = 0
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/shape_offset = Vector2( 0, 0 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+40/shape_one_way = false
+40/shape_one_way_margin = 0.0
+40/shapes = [  ]
+40/z_index = 0
+41/name = "Terrain (32x32).png 41"
+41/texture = ExtResource( 18 )
+41/tex_offset = Vector2( 0, 0 )
+41/modulate = Color( 1, 1, 1, 1 )
+41/region = Rect2( 384, 128, 32, 32 )
+41/tile_mode = 0
+41/occluder_offset = Vector2( 0, 0 )
+41/navigation_offset = Vector2( 0, 0 )
+41/shape_offset = Vector2( 0, 0 )
+41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+41/shape_one_way = false
+41/shape_one_way_margin = 0.0
+41/shapes = [  ]
+41/z_index = 0
+42/name = "Terrain (32x32).png 42"
+42/texture = ExtResource( 18 )
+42/tex_offset = Vector2( 0, 0 )
+42/modulate = Color( 1, 1, 1, 1 )
+42/region = Rect2( 416, 128, 32, 32 )
+42/tile_mode = 0
+42/occluder_offset = Vector2( 0, 0 )
+42/navigation_offset = Vector2( 0, 0 )
+42/shape_offset = Vector2( 0, 0 )
+42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+42/shape_one_way = false
+42/shape_one_way_margin = 0.0
+42/shapes = [  ]
+42/z_index = 0
+43/name = "Terrain (32x32).png 43"
+43/texture = ExtResource( 18 )
+43/tex_offset = Vector2( 0, 0 )
+43/modulate = Color( 1, 1, 1, 1 )
+43/region = Rect2( 480, 96, 32, 32 )
+43/tile_mode = 0
+43/occluder_offset = Vector2( 0, 0 )
+43/navigation_offset = Vector2( 0, 0 )
+43/shape_offset = Vector2( 0, 0 )
+43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+43/shape_one_way = false
+43/shape_one_way_margin = 0.0
+43/shapes = [  ]
+43/z_index = 0
+44/name = "Terrain (32x32).png 44"
+44/texture = ExtResource( 18 )
+44/tex_offset = Vector2( 0, 0 )
+44/modulate = Color( 1, 1, 1, 1 )
+44/region = Rect2( 512, 96, 32, 32 )
+44/tile_mode = 0
+44/occluder_offset = Vector2( 0, 0 )
+44/navigation_offset = Vector2( 0, 0 )
+44/shape_offset = Vector2( 0, 0 )
+44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+44/shape_one_way = false
+44/shape_one_way_margin = 0.0
+44/shapes = [  ]
+44/z_index = 0
+45/name = "Terrain (32x32).png 45"
+45/texture = ExtResource( 18 )
+45/tex_offset = Vector2( 0, 0 )
+45/modulate = Color( 1, 1, 1, 1 )
+45/region = Rect2( 480, 128, 32, 32 )
+45/tile_mode = 0
+45/occluder_offset = Vector2( 0, 0 )
+45/navigation_offset = Vector2( 0, 0 )
+45/shape_offset = Vector2( 0, 0 )
+45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+45/shape_one_way = false
+45/shape_one_way_margin = 0.0
+45/shapes = [  ]
+45/z_index = 0
+46/name = "Terrain (32x32).png 46"
+46/texture = ExtResource( 18 )
+46/tex_offset = Vector2( 0, 0 )
+46/modulate = Color( 1, 1, 1, 1 )
+46/region = Rect2( 512, 128, 32, 32 )
+46/tile_mode = 0
+46/occluder_offset = Vector2( 0, 0 )
+46/navigation_offset = Vector2( 0, 0 )
+46/shape_offset = Vector2( 0, 0 )
+46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+46/shape_one_way = false
+46/shape_one_way_margin = 0.0
+46/shapes = [  ]
+46/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 53, 21.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 20.5, 124 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 158.5, 20 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 19.5, 152 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 16, 47.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 16, 15.75 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 17.5, 17 )
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 32.5, 16 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 16, 32.25 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 16.5, 16 )
+
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 32, 20.5 )
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 213, 37.25 )
+
+[node name="Background_3" type="Node2D"]
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Decor" type="Node2D" parent="."]
+z_index = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AdditionalSky" type="Sprite" parent="Decor"]
+position = Vector2( 159.5, 44 )
+scale = Vector2( 11.0312, 3.5625 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AdditionalWater" type="Sprite" parent="Decor"]
+position = Vector2( 165, 229 )
+scale = Vector2( 11.0312, 2.25 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BgImage" type="Sprite" parent="Decor"]
+position = Vector2( 163, 157 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SmallCloud2" type="Sprite" parent="Decor"]
+position = Vector2( -100, 107 )
+texture = ExtResource( 16 )
+offset = Vector2( 170, 55 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SmallCloud1" type="Sprite" parent="Decor"]
+position = Vector2( 260, 168 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Decor"]
+position = Vector2( -100, 107 )
+frames = SubResource( 8 )
+animation = "Reflections"
+playing = true
+offset = Vector2( 161, 79 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 253, 182 )
+frames = SubResource( 9 )
+frame = 1
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 248, 75 )
+frames = SubResource( 10 )
+frame = 3
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 236, 157 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 177, 115 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 53, 190 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 103, 83 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 148, 136 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 11, 133 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="Decor"]
+position = Vector2( 44, 34 )
+frames = SubResource( 12 )
+playing = true
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Platforms" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GroundAndWalls" type="TileMap" parent="Platforms"]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 20, 0, 1, 10, 0, 2, 10, 0, 3, 10, 0, 4, 10, 0, 5, 10, 0, 6, 27, 0, 7, 10, 0, 8, 10, 0, 9, 21, 0, 65536, 8, 0, 65542, 18, 0, 65545, 14, 0, 131072, 22, 0, 131073, 5, 0, 131078, 17, 0, 131081, 6, 0, 196608, 20, 0, 196609, 37, 0, 196610, 1, 0, 196617, 6, 0, 262144, 8, 0, 262148, 19, 0, 262152, 0, 0, 262153, 26, 0, 327680, 8, 0, 327683, 0, 0, 327684, 42, 0, 327686, 16, 0, 327689, 6, 0, 393216, 22, 0, 393217, 5, 0, 393220, 15, 0, 393221, 5, 0, 393224, 0, 0, 393225, 26, 0, 458752, 7, 0, 458753, 25, 0, 458754, 1, 0, 458756, 6, 0, 458757, 8, 0, 458761, 14, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Colliders" type="StaticBody2D" parent="Platforms"]
+position = Vector2( 224, 112 )
+collision_mask = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -181, 133.5 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -212.5, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -69.5, -100 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( 83.5, 33 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -80, 64.5 )
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( 48, 32 )
+shape = SubResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -176, 96.25 )
+shape = SubResource( 16 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( 50, 97 )
+shape = SubResource( 20 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -160.5, 0 )
+shape = SubResource( 22 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -16, -48.25 )
+shape = SubResource( 23 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -16, 64 )
+shape = SubResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -111.5, 64 )
+shape = SubResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -64, 132.5 )
+shape = SubResource( 28 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -48, 96 )
+shape = SubResource( 29 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Platforms/Colliders"]
+position = Vector2( -176, -32 )
+shape = SubResource( 30 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="La_Mort" type="Area2D" parent="Platforms"]
+visible = false
+collision_layer = 32
+collision_mask = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/La_Mort"]
+position = Vector2( 162, 292.75 )
+shape = SubResource( 25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="La_Muerte" type="AudioStreamPlayer2D" parent="Platforms/La_Mort"]
+stream = ExtResource( 34 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
+
+[connection signal="body_entered" from="Platforms/La_Mort" to="Platforms/La_Mort" method="_on_La_Mort_body_entered"]
