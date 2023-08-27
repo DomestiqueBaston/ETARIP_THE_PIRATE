@@ -887,6 +887,7 @@ __meta__ = {
 position = Vector2( 229, 186 )
 frames = SubResource( 1 )
 animation = "Reflections"
+frame = 3
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -895,6 +896,7 @@ __meta__ = {
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 169, 176 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -904,6 +906,7 @@ __meta__ = {
 [node name="AnimatedSprite11" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 141, 161 )
 frames = SubResource( 3 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -913,6 +916,7 @@ __meta__ = {
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 77, 182 )
 frames = SubResource( 4 )
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -921,6 +925,7 @@ __meta__ = {
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 36, 180 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -930,6 +935,7 @@ __meta__ = {
 [node name="AnimatedSprite9" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 273, 164 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -939,6 +945,7 @@ __meta__ = {
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="Decor"]
 position = Vector2( 90, 173 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -948,6 +955,7 @@ __meta__ = {
 [node name="AnimatedSprite10" type="AnimatedSprite" parent="Decor"]
 position = Vector2( -25, 164 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 centered = false
 __meta__ = {
@@ -967,7 +975,7 @@ __meta__ = {
 position = Vector2( -55, 192 )
 frames = SubResource( 6 )
 animation = "run"
-frame = 5
+frame = 3
 playing = true
 centered = false
 
@@ -975,14 +983,14 @@ centered = false
 position = Vector2( -16, 194 )
 frames = SubResource( 11 )
 animation = "Running_coin"
-frame = 1
+frame = 3
 playing = true
 offset = Vector2( 0, -9 )
 
 [node name="Palmtree" type="AnimatedSprite" parent="."]
 position = Vector2( 137, 193 )
 frames = SubResource( 7 )
-frame = 3
+frame = 1
 playing = true
 centered = false
 __meta__ = {

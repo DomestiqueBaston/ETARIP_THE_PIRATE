@@ -26,6 +26,7 @@ font_data = ExtResource( 4 )
 [node name="Etarip_1" type="Node2D"]
 script = ExtResource( 9 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_vertical_guides_": [  ]
 }
 

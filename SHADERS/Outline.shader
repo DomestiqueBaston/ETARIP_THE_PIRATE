@@ -22,4 +22,3 @@ void fragment() {
 		COLOR = curr_color;
 	}
 }
-
