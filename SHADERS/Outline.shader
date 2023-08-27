@@ -12,7 +12,8 @@ void fragment() {
 	
 	//Let's check that our current pixel color is any of the blacks we wish to swap
 	//If our pixel is black then swap black to red.
-	if (curr_color == black)
+	if (distance(curr_color, black) < 0.01)
+	//if (curr_color == black)  //Original line
 	{
 		COLOR = red;
 	}

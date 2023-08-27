@@ -31,7 +31,7 @@
 [ext_resource path="res://GRAPHICS/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" type="Texture" id=29]
 [ext_resource path="res://SCRIPTS/Pirate.gd" type="Script" id=30]
 [ext_resource path="res://SOUNDS/FX/Bounce Jump/Retro Jump Classic 08.wav" type="AudioStream" id=31]
-[ext_resource path="res://SHADERS/Outline_mod.shader" type="Shader" id=32]
+[ext_resource path="res://SHADERS/Outline.shader" type="Shader" id=32]
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 32 )
