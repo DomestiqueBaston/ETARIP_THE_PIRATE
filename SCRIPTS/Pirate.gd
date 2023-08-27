@@ -16,12 +16,10 @@ func _physics_process(_delta):
 	if Autoload.win == true:
 		set_physics_process(false)
 	
-# This part still doesn't work...
-	if Autoload.invert == false:
+	if Autoload.invert == true:
 		$AnimatedSprite.material.set_shader_param("red", Color(0.34, 0.08, 0.08, 1.0))
 	else:
 		$AnimatedSprite.material.set_shader_param("red", Color(0.20, 0.19, 0.23, 1.0))
-# ===============================
 
 	if Input.is_action_pressed("ui_right"):
 		if Autoload.invert == true:
