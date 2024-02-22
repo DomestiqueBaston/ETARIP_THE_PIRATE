@@ -2,7 +2,7 @@
  A very simple platformer in which the twist resides in the fact that left and right directions change every three seconds...
  
 
-Code by Robin and Ferdi. Help (a lot) from BabadesBois' Discord and the web.
+Code by Robin and Ferdi. Help (a lot) from the web.
 
 Graphics by Pixel Frog (http://pixelfrog-assets.itch.io/treasure-hunters)
 
